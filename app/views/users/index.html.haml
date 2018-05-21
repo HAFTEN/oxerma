@@ -4,6 +4,13 @@
       %h1 Пользователи
     .col-md-6.text-right
       = link_to 'Пригласить', '#', class: 'btn btn-primary'
+  .row.align-items-center{style: 'margin-top: 25px;'}
+    .col-md-12
+      %nav{"aria-label" => "breadcrumb"}
+        %ol.breadcrumb
+          %li.breadcrumb-item
+            = link_to 'Главная', root_path
+          %li.breadcrumb-item.active{"aria-current" => "page"} Пользователи
   .row{style: 'margin-top: 25px;'}
     .col-md-12
       = render partial: 'partials/search'
